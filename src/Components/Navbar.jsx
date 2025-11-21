@@ -48,10 +48,10 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex space-x-4">
-          <button className="btn btn-outline  rounded-lg hover:bg-blue-50 transition font-medium font-bold">
+          <Link to='/login' className="btn btn-outline  rounded-lg hover:bg-blue-50 transition font-bold">
             Login
-          </button>
-          <button className="btn-primary font-medium">Register</button>
+          </Link>
+          <Link to='/register' className="btn-primary font-medium">Register</Link>
         </div>
 
         {/* Hamburger Menu (Mobile) */}
@@ -95,10 +95,10 @@ export default function Navbar() {
             My Ratings
           </NavLink>
           <div className="flex flex-col space-y-2 pt-2 border-t border-gray-200">
-            <button className="btn btn-outline  rounded-lg hover:bg-blue-50 transition font-medium font-bold">
+            <Link to='/login' className="btn btn-outline  rounded-lg hover:bg-blue-50 transition  font-bold">
               Login
-            </button>
-            <button className="btn-primary font-medium">Register</button>
+            </Link>
+            <Link to='/register' className="btn-primary font-medium">Register</Link>
           </div>
         </div>
       )}

@@ -5,6 +5,8 @@ import AllProperties from "../Components/AllProperties";
 import Myproperties from "../Components/Myproperties";
 import AddProperties from "../Components/AddProperties";
 import MyRating from "../Components/MyRating";
+import Login from "../Auth/Login";
+import Register from "../Auth/Register";
 
 export const router = createBrowserRouter([
   {
@@ -32,5 +34,13 @@ export const router = createBrowserRouter([
         element: <MyRating></MyRating>,
       },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login></Login>,
+  },
+  {
+    path: "/register",
+    element: <Register></Register>,
   },
 ]);
